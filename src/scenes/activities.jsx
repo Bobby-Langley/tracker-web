@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import Spinner from 'react-bootstrap/Spinner'
 import ListGroup from 'react-bootstrap/ListGroup'
 
@@ -20,7 +20,7 @@ if(!activitiesList){
 }
 return(
     <ListGroup>
-        {activitesList.map(activity=> {
+        {activitiesList.map(activity => {
         <ListGroup.Item>key={activity.name}</ListGroup.Item>
 })}
 
